@@ -24,7 +24,9 @@ a:hover {
 }
 
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
+  background-color: rgba(128, 128, 128, 0.850);
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -35,6 +37,19 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+nav {
+  position: fixed;
+  width: 100%;
+  top: 3px;
+  text-align: right;
+  background-color: #74a0ff;
+  opacity: 0.5;
+}
+.nav-link {
+ margin: 5px 15px;
+ color: black;
+ size: 25px;
+}
 
 button {
   border-radius: 8px;
@@ -43,7 +58,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgba(22, 22, 23, 0.8);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -53,6 +68,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+img {
+  margin: 10px 10px;
+  width: 400px;
+  height: 400px;
 }
 
 @media (prefers-color-scheme: light) {
