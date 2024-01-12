@@ -1,36 +1,38 @@
 import { useState, useEffect } from 'react';
 import API from '../utils/api'
 import { Link } from 'react-router-dom';
+import Profile from '../components/Portfolio/portfolioForHome'
+import ListItem from '../components/UI/ListItem'
+import Footer from '../components/footer'
+
 
 export default function HomePage() {
 
   const [repos, setRepos] = useState([]);
-  const fetchData = async () => {
-    const { data } = await API.getRepository();
-
-    setRepos(data);
-  };
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const  data = await API.getRepository();
+        console.log(data)
+        setRepos(data || []); // Ensure data is not undefined
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
     fetchData();
   }, []);
 
-
-    return (
-        <div className="container pt-4">
-          <ul className="list-group list-group">
-          {repos.map((repo) => (
+  return (
+    <div className="container pt-4">
+      <ul className="list-group list-group">
+        {repos.map((repo) => (
           <ListItem key={repo.id}>
-            <Profile user={repo} />
-            <Link
-              to={`/profile/${repo.id}`}
-              className="badge bg-primary rounded-pill"
-            >
-              See More
-            </Link>
+            <Profile repo={repo} />
           </ListItem>
         ))}
-
-          </ul>
-        </div>
-      );
-    }
+      </ul>
+      <Footer/>
+    </div>
+  );
+}

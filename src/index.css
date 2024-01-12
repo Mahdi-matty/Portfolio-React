@@ -26,7 +26,7 @@ a:hover {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
-  background-color: rgba(128, 128, 128, 0.850);
+  background-color: rgba(128, 128, 128, 0.13);
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -73,6 +73,57 @@ img {
   margin: 10px 10px;
   width: 400px;
   height: 400px;
+}
+.skillResum {
+  margin:  30px;
+}
+.educationresume {
+  margin: 25px;
+}
+.titleRes {
+  margin: 25px;
+}
+.githubRes {
+  font-size: 35px;
+  left: 3000px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+textarea {
+  width: 100%;
+  margin: 10px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+.bigAssContain {
+  display: inline;
+}
+.ulImg img{
+  position: relative;
+  left: 100px;
+}
+.submitBtn{
+  margin-left: 10px;
+}
+#examplInputEmail1 {
+  border: 2px solid #ccc;
+  height: 25px;
+  margin: 10px;
+  width: 25vw;
+  background-color: #f8f8f8;
+}
+#examplInputName {
+  height: 25px;
+  border: 2px solid #ccc;
+  margin: 10px;
+  width: 25vw;
+  background-color: #f8f8f8;
 }
 
 @media (prefers-color-scheme: light) {

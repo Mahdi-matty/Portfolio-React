@@ -1,25 +1,27 @@
 import { Octokit } from "https://esm.sh/@octokit/core";
 
-const getRepository = () => {
-
 const octokit = new Octokit({
-  auth: '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'
+  auth: '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'
 })
-    async function getuserrepo(){
-         try {
-      const response = await octokit.request('GET /users/:username/repos', {
-        headers: {
-          'X-GitHub-Api-Version': '2022-11-28',
-        },
-        username: 'Mahdi-matty',
-      });
-      const repositories = response.data;
-      console.log('Received response:', repositories);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-    }
-    getuserrepo()
+
+async function getuserrepo(){
+  try {
+  const response = await octokit.request('GET /users/:username/repos', {
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28',
+  },
+  username: 'Mahdi-matty',
+});
+  const repositories = response.data;
+  // console.log('Received response:', repositories);
+  return repositories;
+  } catch (error) {
+  console.error('Error fetching data:', error);
+  }
+}
+
+const getRepository = async () => {
+   return await getuserrepo()
 }
 ;
   
