@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { validateEmail } from '../utils/helper';
 import Footer from '../components/footer'
+import {FaPhone, FaEnvelope, FaMapMarkerAlt} from 'react-icons/fa'
+
 
 function Contact() {
   // Create state variables for the fields in the form
@@ -16,7 +18,6 @@ function Contact() {
     const inputType = target.name;
     const inputValue = target.value;
 
-    // return name === 'email' ? setEmail(value) : 'username' ? setUserName(value) : 'password'? setPassword(value) : setErrorMessage('error')
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'name') {
@@ -43,7 +44,8 @@ function Contact() {
   };
 
   return (
-    <div className="container text-center">
+    <>
+      <div className="container text-center contactDev">
       <h1>Contact Us</h1>
       <form className="form" onSubmit={handleFormSubmit}>
       <div class="mb-3">
@@ -87,6 +89,22 @@ function Contact() {
       )}
       <Footer/>
     </div>
+    <div className='realContactDev'>
+        <p style={{ display: 'flex', alignItems: 'center' }}>
+          <FaEnvelope style={{ display: 'block' }} />
+        <span>mmiq69@gmail.com</span>
+        </p>
+        <p style={{ display: 'flex', alignItems: 'center' }}>
+          <FaPhone style={{ display: 'block' }} />
+        <span>647-785-6674</span>
+        </p>
+        <p style={{ display: 'flex', alignItems: 'center' }}>
+          <FaMapMarkerAlt style={{ display: 'block' }} />
+        <span>Toronto-Ontario</span>
+        </p>
+    </div>
+    </>
+    
   );
 }
 

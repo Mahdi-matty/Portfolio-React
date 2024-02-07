@@ -26,7 +26,7 @@ a:hover {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
-  background-color: rgba(128, 128, 128, 0.13);
+  background-color: #c97aff;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -39,16 +39,38 @@ h1 {
 }
 nav {
   position: fixed;
-  width: 100%;
-  top: 3px;
-  text-align: right;
-  background-color: #74a0ff;
-  opacity: 0.5;
+  left: -30%; 
+  top: 0;
+  height: 100%;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  transition: left 0.3s; 
+  z-index: 1000;
+  opacity: 0.9;
 }
-.nav-link {
- margin: 5px 15px;
- color: black;
- size: 25px;
+nav:hover {
+  left: 0; 
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+nav a:hover {
+  background-color: white;
+  color: purple;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 button {
@@ -73,6 +95,9 @@ img {
   margin: 10px 10px;
   width: 400px;
   height: 400px;
+}
+.aboutMeContainer {
+  padding-left: 100px;
 }
 .skillResum {
   margin:  30px;
@@ -124,6 +149,18 @@ textarea {
   margin: 10px;
   width: 25vw;
   background-color: #f8f8f8;
+}
+.contactDev {
+  padding-left: 100px;
+  width: 40%;
+  float: left;
+}
+.realContactDev {
+  padding-left: 350px;
+  width: 40%;
+  float: right;
+  text-align: right;
+
 }
 
 @media (prefers-color-scheme: light) {

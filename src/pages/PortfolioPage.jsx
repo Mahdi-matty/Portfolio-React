@@ -1,6 +1,5 @@
 import Footer from '../components/footer'
 import Salut from '../assets/salut.png'
-import HereSay from '../assets/Here-say.png'
 import Weather from '../assets/Weather.png'
 import WorkCalender from '../assets/WorkCalender.png'
 import Quiz from '../assets/Quiz.png'
@@ -15,14 +14,8 @@ export default function Protfolio() {
               <img src={Salut} ></img>
               </a>
             </li>
-            <li>
+
               <hr></hr>
-              <a href='https://mahdi-matty.github.io/Here-Say/'>
-                Here-Say
-              <img src={HereSay} ></img>
-              </a>
-            </li>
-            <hr></hr>
             <li>
               <a href='https://mahdi-matty.github.io/Open-Weather/'>
                 Weather Forcast
