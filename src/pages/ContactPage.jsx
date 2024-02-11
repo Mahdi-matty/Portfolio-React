@@ -35,7 +35,6 @@ function Contact() {
       return;
     }
     
-
     // If successful, we want to clear out the input after registration.
     setName('');
     setMessage('');
@@ -87,7 +86,6 @@ function Contact() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
-      <Footer/>
     </div>
     <div className='realContactDev'>
         <p style={{ display: 'flex', alignItems: 'center' }}>

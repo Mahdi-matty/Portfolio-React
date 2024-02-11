@@ -32,7 +32,6 @@ export default function HomePage() {
           </ListItem>
         ))}
       </ul>
-      <Footer/>
     </div>
   );
 }

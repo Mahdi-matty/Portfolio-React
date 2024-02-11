@@ -127,12 +127,46 @@ textarea {
   resize: none;
 }
 .bigAssContain {
-  display: inline;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
-.ulImg img{
-  position: relative;
-  left: 100px;
+.bigAssContain ul {
+  margin-left: 250px;
+  list-style: none;
+  padding: 0;
 }
+.bigAssContain li {
+  margin-bottom: 20px;
+  flex: 1 0 0;
+  width: calc(66.33% - 20px);
+  padding: 10px;
+  text-align: center;
+
+}
+.bigAssContain li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.bigAssContain li a :hover {
+  background-color: #f0f0f0;
+}
+.bigAssContain li a img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 .submitBtn{
   margin-left: 10px;
 }
@@ -161,6 +195,14 @@ textarea {
   float: right;
   text-align: right;
 
+}
+.resumePageUl{
+  justify-content: center;
+  align-items: center;
+}
+.resumeLiItem{
+  margin: 40px 300px;
+  padding-left: 10px;
 }
 
 @media (prefers-color-scheme: light) {

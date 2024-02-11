@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Navbar from './UI/Navbar'
-import {FaUser, FaBriefcase, FaEnvelope, FaFileAlt} from 'react-icons/fa'
+import {FaUser, FaBriefcase, FaEnvelope, FaFileAlt, FaGithub} from 'react-icons/fa'
 
 export default function Nav() {
 
@@ -22,6 +22,7 @@ export default function Nav() {
             <Link key={5} className="nav-link text-light" to="/resume">
             <FaFileAlt />
             </Link>,
+            <a href='https://github.com/Mahdi-matty'><FaGithub /></a>
         ]}
   
     />

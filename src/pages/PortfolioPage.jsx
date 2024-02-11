@@ -3,6 +3,7 @@ import Salut from '../assets/salut.png'
 import Weather from '../assets/Weather.png'
 import WorkCalender from '../assets/WorkCalender.png'
 import Quiz from '../assets/Quiz.png'
+import Brilla from '../assets/Brillascreen.png'
 export default function Protfolio() {
 
     return (
@@ -36,8 +37,13 @@ export default function Protfolio() {
               <img src={Quiz} ></img>
               </a>
             </li>
+            <li>
+              <a href='https://65c7fb95cf29b6b375ea0f6c--brillamentee.netlify.app/'>
+                Take a Quiz
+              <img src={Brilla} ></img>
+              </a>
+            </li>
           </ul>
-          <Footer/>
         </div>
         
       );
