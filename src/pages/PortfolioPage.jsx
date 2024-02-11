@@ -39,7 +39,7 @@ export default function Protfolio() {
             </li>
             <li>
               <a href='https://65c7fb95cf29b6b375ea0f6c--brillamentee.netlify.app/'>
-                Take a Quiz
+                Learn by flashcards
               <img src={Brilla} ></img>
               </a>
             </li>
