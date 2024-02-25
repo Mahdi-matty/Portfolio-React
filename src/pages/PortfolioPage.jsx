@@ -38,7 +38,7 @@ export default function Protfolio() {
               </a>
             </li>
             <li>
-              <a href='https://65c7fb95cf29b6b375ea0f6c--brillamentee.netlify.app/'>
+              <a href='https://brillamentee.netlify.app'>
                 Learn by flashcards
               <img src={Brilla} ></img>
               </a>

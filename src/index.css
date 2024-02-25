@@ -26,7 +26,8 @@ a:hover {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
-  background-color: #c97aff;
+  /* background-color: #c97aff; */
+  background-color: tan;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -48,6 +49,9 @@ nav {
   transition: left 0.3s; 
   z-index: 1000;
   opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 nav:hover {
   left: 0; 
@@ -55,6 +59,7 @@ nav:hover {
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav li {
@@ -72,6 +77,7 @@ nav a:hover {
   padding: 10px;
   border-radius: 5px;
 }
+
 
 button {
   border-radius: 8px;
@@ -94,16 +100,33 @@ button:focus-visible {
 img {
   margin: 10px 10px;
   width: 400px;
-  height: 400px;
+  height: 500px;
 }
 .aboutMeContainer {
   padding-left: 100px;
+  height: 100%;
 }
+.picContainer {
+  height: 100%;
+}
+.restOfContainer {
+  margin-left: 30px;
+  padding-left: 100px;
+}
+.detailContainer{
+  margin-left: 100px;
+}
+.eduandskillContainer {
+  display: flex;
+}
+
 .skillResum {
   margin:  30px;
+  margin-left: 100px;
 }
 .educationresume {
   margin: 25px;
+  margin-left: 100px;
 }
 .titleRes {
   margin: 25px;
@@ -113,6 +136,28 @@ img {
   left: 3000px;
   text-align: center;
   margin-bottom: 50px;
+}
+.features-icons {
+  display: flex;
+  align-items: flex-start;
+}
+
+.features-icons .container {
+  width: 100%;
+}
+
+.features-icons .col-lg-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.features-icons .col-lg-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.features-icons-item {
+  text-align: left;
 }
 textarea {
   width: 100%;
