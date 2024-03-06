@@ -17,6 +17,9 @@ export default function Resume() {
             <li className='list-group-item resumeLiItem'>
               <p>Co-Founder Betarjom</p>
             </li>
+            <li className='list-group-item resumeLiItem'>
+              <p>junior Web developer Karwan, zoodfood, mudh</p>
+            </li>
           </ul>
         </div>
       );
