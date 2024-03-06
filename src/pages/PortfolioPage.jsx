@@ -16,21 +16,21 @@ export default function Protfolio() {
               </a>
             </li>
 
-              <hr></hr>
+             
             <li>
               <a href='https://mahdi-matty.github.io/Open-Weather/'>
                 Weather Forcast
               <img src={Weather} ></img>
               </a>
             </li>
-            <hr></hr>
+           
             <li>
               <a href='https://mahdi-matty.github.io/Work-Day/'>
                 Office Calender
               <img src={WorkCalender} ></img>
               </a>
             </li>
-            <hr></hr>
+          
             <li>
               <a href='https://mahdi-matty.github.io/code-Qiez/'>
                 Take a Quiz
