@@ -115,6 +115,8 @@ img {
 }
 .mahdiPic {
   border-radius: 5%;
+  width: auto;
+  height: auto;
 }
 .restOfContainer {
   margin-left: 30px;
@@ -260,7 +262,13 @@ textarea {
 .verticalLine {
   left: 400px;
 }
-
+.vertical-timeline-element{
+  width: 400px;
+}
+.vertical-timeline-element-subtitle{
+  height: 250px;
+  margin: 75px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
