@@ -13,7 +13,7 @@ export default function Resume() {
     >
       <VerticalTimeline className='verticalLine' >
         <div className="container pt-4" >
-        <VerticalTimelineElement
+          <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="06/2022 - present"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
