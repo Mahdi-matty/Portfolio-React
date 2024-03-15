@@ -252,13 +252,13 @@ textarea {
   text-align: right;
 
 }
-.resumePageUl{
-  justify-content: center;
-  align-items: center;
+
+.resumePageDev{
+  margin: 0 auto;
 }
-.resumeLiItem{
-  margin: 40px 300px;
-  padding-left: 10px;
+
+.verticalLine {
+  left: 400px;
 }
 
 @media (prefers-color-scheme: light) {
