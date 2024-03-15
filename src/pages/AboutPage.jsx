@@ -39,7 +39,6 @@
   
 import { motion } from 'framer-motion';
 import Mahdi from '../assets/Mahdi.jpg';
-import Footer from '../components/Footer';
 
 export default function About() {
   return (
