@@ -16,12 +16,13 @@ export default function Resume() {
           <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="06/2022 - present"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: 'blue', color: '#fff' }}
+                contentStyle={ { background: 'salmon', width: '150px'} }
                 icon={<FaBriefcase />}
               >            
                 <motion.p 
                 className="vertical-timeline-element-subtitle"
-                  style={{ display: 'flex', alignItems: 'center' }}
+                  style={{ display: 'flex', alignItems: 'center', }}
                   initial={{ x: -50, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.2 }}
@@ -30,7 +31,8 @@ export default function Resume() {
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="09/2018 - 05/2022"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: 'blue', color: '#fff' }}
+                contentStyle={ { background: 'salmon'} }
                 icon={<FaBriefcase />}
               >
                 <motion.p 
@@ -44,7 +46,8 @@ export default function Resume() {
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="10/2020 - 11/2021"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: 'blue', color: '#fff' }}
+                contentStyle={ { background: 'salmon'} }
                 icon={<FaBriefcase />}
               >            
                 <motion.p 
@@ -58,7 +61,8 @@ export default function Resume() {
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="2011 - present"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: 'blue', color: '#fff' }}
+                contentStyle={ { background: 'salmon'} }
                 icon={<FaBriefcase />}
               >
             <motion.p 
@@ -73,7 +77,8 @@ export default function Resume() {
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="10/2015 - 03/2018"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: 'blue', color: '#fff' }}
+                contentStyle={ { background: 'salmon'} }
                 icon={<FaBriefcase />}
               >
                     <motion.p 

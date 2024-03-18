@@ -4,7 +4,6 @@ import WorkCalender from '../assets/WorkCalender.png'
 import Quiz from '../assets/Quiz.png'
 import Brilla from '../assets/Brillascreen.png'
 import { motion } from 'framer-motion';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 export default function Protfolio() {
    
     return (
@@ -21,30 +20,21 @@ export default function Protfolio() {
         transition={{ duration: 0.5 }} 
       >
         
-        <VerticalTimeline className='verticalLine'>
           <div className="container pt-4 bigAssContain">
             <ul>
               <li>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="06/2022 - present"
-              > 
+              
                <a className="vertical-timeline-element-title"  href='https://salut-2-d1e41c6b2557.herokuapp.com/'>
                 Salut
                 </a>
-                <motion.img 
+                  <motion.img 
                   src={Salut} 
                   className="img-fluid mahdiPic vertical-timeline-element-subtitle"
                   alt="me" 
                   whileHover={{ scale: 1.1 }}
-                />
-              </VerticalTimelineElement>
+                />                                      
               </li>
-              <li>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="06/2022 - present"
-              > 
+              <li>              
                <a href='https://mahdi-matty.github.io/Open-Weather/'>
                 Weather Forcast  </a>
                 <motion.img 
@@ -53,59 +43,45 @@ export default function Protfolio() {
                   alt="me" 
                   whileHover={{ scale: 1.1 }}
                 />
-              </VerticalTimelineElement>
+              
               </li>
               <li>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="06/2022 - present"
-              > 
                 <a className="vertical-timeline-element-title" href='https://mahdi-matty.github.io/Work-Day/'>
-                Office Calender
-                <motion.img 
+                    Office Calender
+                </a>
+               <motion.img 
                   src={WorkCalender} 
                   className="img-fluid mahdiPic vertical-timeline-element-subtitle"
                   alt="me" 
                   whileHover={{ scale: 1.1 }}
                 />
-              </a>
-              </VerticalTimelineElement>
               </li>
-              <li>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="06/2022 - present"
-              > 
-              <a className="vertical-timeline-element-title" href='https://mahdi-matty.github.io/code-Qiez/'>
-                Take a Quiz
+              <li>          
+                <a className="vertical-timeline-element-title" href='https://mahdi-matty.github.io/code-Qiez/'>
+                  Take a Quiz
+                </a>
                 <motion.img 
                   src={Quiz} 
                   className="img-fluid mahdiPic vertical-timeline-element-subtitle"
                   alt="me" 
                   whileHover={{ scale: 1.1 }}
                 />
-              </a>
-              </VerticalTimelineElement>
               </li>
-              <li>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="06/2022 - present"
-              > 
-              <a className="vertical-timeline-element-title" href='https://brillamentee.netlify.app'>
+              <li>             
+                <a className="vertical-timeline-element-title" href='https://brillamentee.netlify.app'>
                     Learn by flashcards
+               
+                </a>
                 <motion.img 
                   src={Brilla} 
                   className="img-fluid mahdiPic vertical-timeline-element-subtitle"
                   alt="me" 
                   whileHover={{ scale: 1.1 }}
                 />
-              </a>
-              </VerticalTimelineElement>
               </li>              
           </ul>
         </div>
-        </VerticalTimeline>
+       
         
         </motion.section>
     </motion.div>

@@ -57,7 +57,7 @@ export default function About() {
         <div className="features-icons-icon d-flex picContainer">
           <motion.img 
             src={Mahdi} 
-            className="img-fluid mahdiPic"
+            className="img-fluid mahdiPicture"
             alt="me" 
             whileHover={{ scale: 1.1 }}
           />
