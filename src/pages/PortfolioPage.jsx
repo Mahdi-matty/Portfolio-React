@@ -3,6 +3,7 @@ import Weather from '../assets/Weather.png'
 import WorkCalender from '../assets/WorkCalender.png'
 import Quiz from '../assets/Quiz.png'
 import Brilla from '../assets/Brillascreen.png'
+import Maktab from '../assets/Maktab.png'
 import { motion } from 'framer-motion';
 export default function Protfolio() {
    
@@ -46,11 +47,11 @@ export default function Protfolio() {
               
               </li>
               <li>
-                <a className="vertical-timeline-element-title" href='https://mahdi-matty.github.io/Work-Day/'>
-                    Office Calender
+                <a className="vertical-timeline-element-title" href='https://makteb.netlify.app'>
+                    Online School
                 </a>
                <motion.img 
-                  src={WorkCalender} 
+                  src={Maktab} 
                   className="img-fluid mahdiPic vertical-timeline-element-subtitle"
                   alt="me" 
                   whileHover={{ scale: 1.1 }}
