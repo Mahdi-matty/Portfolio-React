@@ -13,3 +13,6 @@ You can contribute by visiting my github page at : https://github.com/Mahdi-matt
 
 ##### Deployed Version
 by visiting this link you can see simple demonstration of how to use the app: https://drive.google.com/file/d/15RFVT6z0cKV3_XhDhtrKRgMl6rSf3t5g/view
+
+###### Vue version
+visit same app in Vue :   https://mahdivue.netlify.app
